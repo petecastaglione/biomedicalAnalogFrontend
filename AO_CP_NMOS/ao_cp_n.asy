@@ -1,0 +1,23 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -32 96 -32 -96
+LINE Normal 112 0 -32 96
+LINE Normal -32 -96 112 0
+LINE Normal -32 -48 -48 -48
+LINE Normal -32 48 -48 48
+LINE Normal 128 0 112 0
+LINE Normal 48 43 48 80
+TEXT -18 2 Left 2 AOCP-N
+WINDOW 0 -32 -96 Bottom 2
+PIN -48 -48 LEFT 20
+PINATTR PinName IM
+PINATTR SpiceOrder 1
+PIN -48 48 LEFT 20
+PINATTR PinName IP
+PINATTR SpiceOrder 2
+PIN 128 0 RIGHT 30
+PINATTR PinName Out
+PINATTR SpiceOrder 3
+PIN 48 80 VLEFT 40
+PINATTR PinName Iref
+PINATTR SpiceOrder 4
