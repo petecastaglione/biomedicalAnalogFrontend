@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./parameterExtraction/ekvFit",
+        "./ekvParameterExtraction/ekvExtractionScripts"
+    ]
+}
