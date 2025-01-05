@@ -1,0 +1,16 @@
+Circuit: * D:\Facultate\MASTER_AN_1\BLOCURI ANALOGICE AVANSATE\Proiect\biomedicalAnalogFrontend\p2_filter\Circuit_filtru\test_biquad_real.asc
+
+Error on line 6 : c1 n003 vmc c
+	 Unable to find definition of model "c"
+Error on line 7 : c2 out vmc c
+	 Unable to find definition of model "c"
+Error on line 14 : r2 n012 n011 r
+	 Unable to find definition of model "r"
+Error on line 15 : r3 n008 n007 r
+	 Unable to find definition of model "r"
+Error on line 16 : r4 n002 n001 r
+	 Unable to find definition of model "r"
+Error on line 19 : r1 n010 n009 r
+	 Unable to find definition of model "r"
+WARNING: Less than two connections to node OUT2.  This node is used by E2.
+Fatal Error: Missing capacitance value for "C2"

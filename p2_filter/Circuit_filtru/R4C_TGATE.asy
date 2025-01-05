@@ -1,0 +1,27 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -144 -96 -144 -112
+LINE Normal -48 -96 -48 -112
+LINE Normal -96 16 -96 0
+LINE Normal -208 -48 -192 -48
+LINE Normal 0 -48 16 -48
+RECTANGLE Normal 0 0 -192 -96
+TEXT -152 -48 Left 2 R4C_TGATE
+WINDOW 0 -192 -96 Bottom 2
+WINDOW 39 -38 13 Center 2
+SYMATTR SpiceLine C=
+PIN -208 -48 LEFT 20
+PINATTR PinName 1
+PINATTR SpiceOrder 1
+PIN 16 -48 RIGHT 20
+PINATTR PinName 2
+PINATTR SpiceOrder 2
+PIN -144 -112 TOP 20
+PINATTR PinName sa
+PINATTR SpiceOrder 3
+PIN -48 -112 TOP 20
+PINATTR PinName sb
+PINATTR SpiceOrder 4
+PIN -96 16 BOTTOM 20
+PINATTR PinName vmc
+PINATTR SpiceOrder 5
