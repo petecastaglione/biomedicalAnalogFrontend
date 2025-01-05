@@ -1,0 +1,3 @@
+primu filtru: 1/(1+2.4025*s+4.9862*s**2)
+
+al doilea filtru: 1/(1+0.2374*s+1.1896*s**2)
