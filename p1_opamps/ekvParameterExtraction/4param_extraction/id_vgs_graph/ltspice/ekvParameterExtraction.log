@@ -1,10 +1,10 @@
 LTspice 24.0.12 for Windows
-Circuit: * C:\Users\maurovlachus\OneDrive - Technical University of Cluj-Napoca\utcn\master\caa\proiect\p1_opamps\parameterExtraction\ekvParameterExtraction.asc
-Start Time: Thu Dec 26 14:23:13 2024
+Circuit: * C:\Users\maurovlachus\OneDrive - Technical University of Cluj-Napoca\utcn\master\caa\proiect\p1_opamps\ekvParameterExtraction\4param_extraction\id_vgs_graph\ltspice\ekvParameterExtraction.asc
+Start Time: Tue Dec 31 20:37:45 2024
 solver = Normal
 Maximum thread count: 22
 tnom = 27
 temp = 27
 method = modified trap
-Total elapsed time: 0.060 seconds.
+Total elapsed time: 0.146 seconds.
 
