@@ -1,5 +1,6 @@
-Circuit: * D:\Facultate\MASTER_AN_1\BLOCURI ANALOGICE AVANSATE\Proiect\biomedicalAnalogFrontend\p2_filter\Circuit_filtru\test_biquad_real.asc
-
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\maurovlachus\OneDrive - Technical University of Cluj-Napoca\utcn\master\caa\proiect\p2_filter\Circuit_filtru\test_biquad_real.asc
+Start Time: Mon Jan  6 11:55:12 2025
 Error on line 6 : c1 n003 vmc c
 	 Unable to find definition of model "c"
 Error on line 7 : c2 out vmc c
@@ -12,5 +13,10 @@ Error on line 16 : r4 n002 n001 r
 	 Unable to find definition of model "r"
 Error on line 19 : r1 n010 n009 r
 	 Unable to find definition of model "r"
-WARNING: Less than two connections to node OUT2.  This node is used by E2.
-Fatal Error: Missing capacitance value for "C2"
+solver = Normal
+Maximum thread count: 22
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Less than two connections to node out2.  This node is used by e2.
+Fatal Error: Missing capacitance value for "c1"

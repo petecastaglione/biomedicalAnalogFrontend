@@ -1,0 +1,8 @@
+* C:\Users\maurovlachus\OneDrive - Technical University of Cluj-Napoca\utcn\master\caa\proiect\p2_filter\Circuit_filtru\test_biquad_laplace.asc
+E1 N001 0 N002 0 laplace = 1/(s**2*(493.367u) + s*(23.898m) +1)
+E2 out2 0 N001 0 laplace = 1/(s**2*(117.707u) + s*(2.361m) +1)
+V5 N002 0 AC 1
+.lib proiect_CAA.txt
+.ac dec 100 1m 100
+.backanno
+.end
