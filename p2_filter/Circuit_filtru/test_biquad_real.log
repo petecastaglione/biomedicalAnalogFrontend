@@ -1,0 +1,80 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\maurovlachus\OneDrive - Technical University of Cluj-Napoca\utcn\master\caa\proiect\p2_filter\Circuit_filtru\test_biquad_real.asc
+Start Time: Mon Jan  6 15:19:47 2025
+solver = Normal
+Maximum thread count: 22
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Node X2:NC_01 is floating.
+WARNING: Node X2:NC_03 is floating.
+WARNING: Node X2:N011 is floating.
+WARNING: Node X3:NC_01 is floating.
+WARNING: Node X3:NC_03 is floating.
+WARNING: Node X3:N011 is floating.
+WARNING: Node X4:NC_01 is floating.
+WARNING: Node X4:NC_03 is floating.
+WARNING: Node X4:N011 is floating.
+WARNING: Node X1:NC_01 is floating.
+WARNING: Node X1:NC_03 is floating.
+WARNING: Node X1:N011 is floating.
+WARNING: Node X5:NC_01 is floating.
+WARNING: Node X5:NC_03 is floating.
+WARNING: Node X5:N011 is floating.
+WARNING: Node X6:NC_01 is floating.
+WARNING: Node X6:NC_03 is floating.
+WARNING: Node X6:N011 is floating.
+
+WARNING: Less than two connections to node out2.  This node is used by e2.
+WARNING: Less than two connections to node x2:nc_01.  This node is used by m:x2:3.
+WARNING: Less than two connections to node x2:nc_02.  This node is used by m:x2:3.
+WARNING: Less than two connections to node x2:nc_03.  This node is used by m:x2:3.
+WARNING: Less than two connections to node x2:nc_04.  This node is used by m:x2:17.
+WARNING: Less than two connections to node x2:n011.  This node is used by m:x2:17.
+WARNING: Less than two connections to node x3:nc_01.  This node is used by m:x3:3.
+WARNING: Less than two connections to node x3:nc_02.  This node is used by m:x3:3.
+WARNING: Less than two connections to node x3:nc_03.  This node is used by m:x3:3.
+WARNING: Less than two connections to node x3:nc_04.  This node is used by m:x3:17.
+WARNING: Less than two connections to node x3:n011.  This node is used by m:x3:17.
+WARNING: Less than two connections to node x4:nc_01.  This node is used by m:x4:3.
+WARNING: Less than two connections to node x4:nc_02.  This node is used by m:x4:3.
+WARNING: Less than two connections to node x4:nc_03.  This node is used by m:x4:3.
+WARNING: Less than two connections to node x4:nc_04.  This node is used by m:x4:17.
+WARNING: Less than two connections to node x4:n011.  This node is used by m:x4:17.
+WARNING: Less than two connections to node x1:nc_01.  This node is used by m:x1:3.
+WARNING: Less than two connections to node x1:nc_02.  This node is used by m:x1:3.
+WARNING: Less than two connections to node x1:nc_03.  This node is used by m:x1:3.
+WARNING: Less than two connections to node x1:nc_04.  This node is used by m:x1:17.
+WARNING: Less than two connections to node x1:n011.  This node is used by m:x1:17.
+WARNING: Less than two connections to node x5:nc_01.  This node is used by m:x5:3.
+WARNING: Less than two connections to node x5:nc_02.  This node is used by m:x5:3.
+WARNING: Less than two connections to node x5:nc_03.  This node is used by m:x5:3.
+WARNING: Less than two connections to node x5:nc_04.  This node is used by m:x5:17.
+WARNING: Less than two connections to node x5:n011.  This node is used by m:x5:17.
+WARNING: Less than two connections to node x6:nc_01.  This node is used by m:x6:3.
+WARNING: Less than two connections to node x6:nc_02.  This node is used by m:x6:3.
+WARNING: Less than two connections to node x6:nc_03.  This node is used by m:x6:3.
+WARNING: Less than two connections to node x6:nc_04.  This node is used by m:x6:17.
+WARNING: Less than two connections to node x6:n011.  This node is used by m:x6:17.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+Gmin = 2.03704e-09
+Gmin = 2.18725e-10
+Gmin = 2.34854e-11
+Gmin = 2.52173e-12
+Gmin = 2.70769e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.217 seconds.
+

@@ -1,0 +1,44 @@
+* C:\Users\maurovlachus\OneDrive - Technical University of Cluj-Napoca\utcn\master\caa\proiect\p2_filter\Circuit_filtru\test_biquad_ideal.asc
+C1 N003 N001 {C1_1}
+V1 in 0 AC 1
+R1 N001 in {Rg_1}
+XX1 N001 0 N003 ao_model
+R2 N003 N001 {R1_1}
+C2 N006 N005 {C2_1}
+XX2 N005 0 N006 ao_model
+R3 N005 N003 {R2_1}
+XX3 N008 0 N002 ao_model
+R4 N008 N006 {R3_1}
+R5 N002 N008 {R3_1}
+R6 N002 N001 {R4_1}
+C3 N007 N004 {C1_2}
+R7 N004 N002 {Rg_2}
+XX4 N004 0 N007 ao_model
+R8 N007 N004 {R1_2}
+C4 N010 N009 {C2_2}
+XX5 N009 0 N010 ao_model
+R9 N009 N007 {R2_2}
+XX6 N011 0 out ao_model
+R10 N011 N010 {R3_2}
+R11 out N011 {R3_2}
+R12 out N004 {R4_2}
+E1 N012 0 N013 0 laplace = 1/(s**2*(493.367u) + s*(23.898m) +1)
+E2 out2 0 N012 0 laplace = 1/(s**2*(117.707u) + s*(2.361m) +1)
+V2 N013 0 AC 1
+
+* block symbol definitions
+.subckt ao_model IM IP out
+E1 N001 0 IM IP -1
+R1 N002 N001 1
+Rid IM IP {Rid}
+C1 N002 0 {1/(2*3.1415*fp)}
+E2 N003 0 N002 0 {GBW/fp}
+Rout out N003 {Rout}
+.PARAM Rid=1e+20 Rout=6500 GBW=33e+6 fp=6e+3
+.ends ao_model
+
+.PARAM Rg_1= R4_1 R1_1= 2.064G R4_1=2.221G R2_1=R4_1 R3_1= 1G C1_1= 10p C2_1=10p
+.PARAM Rg_2= R4_2 R1_2= 4.984G R4_2=1.085G R2_2=R4_2 R3_2=1G C1_2= 10p C2_2=10p
+.ac dec 100 1m 100
+.backanno
+.end
