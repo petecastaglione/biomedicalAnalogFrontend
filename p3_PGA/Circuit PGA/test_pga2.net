@@ -1,0 +1,87 @@
+* D:\Facultate\MASTER_AN_1\BLOCURI ANALOGICE AVANSATE\Proiect\biomedicalAnalogFrontend\p3_PGA\Circuit PGA\test_pga2.asc
+V4 in vmc AC 1
+V1 $G_VDD 0 1.65
+V2 $G_VSS 0 -1.65
+V3 vmc 0 0
+R1 N005 in {R1}
+R2 out1 N010 {R11}
+XX2 N005 s11 N010 com_tgate
+R3 out1 N008 {R12}
+XX3 N005 s12 N008 com_tgate
+R4 out1 N006 {R13}
+XX4 N005 s13 N006 com_tgate
+R5 N001 out1 {R2}
+R6 out N011 {R21}
+R7 out N009 {R22}
+XX7 N001 s21 N011 com_tgate
+R8 out N007 {R23}
+XX8 N001 s22 N009 com_tgate
+XX9 N001 s23 N007 com_tgate
+V5 s11 0 {s11}
+V6 s12 0 {s12}
+V7 s13 0 {s13}
+V9 s21 0 {s21}
+V10 s22 0 {s22}
+V11 s23 0 {s23}
+XX1 N005 vmc out1 N012 ao_cp_n
+XX6 N001 vmc out N013 ao_cp_n
+I2 N012 0 25µ
+I3 N013 0 25µ
+R9 out N004 {R24}
+R10 out N003 {R25}
+XX5 N001 s24 N004 com_tgate
+R11 out N002 {R26}
+XX10 N001 s25 N003 com_tgate
+XX11 N001 s26 N002 com_tgate
+V8 s24 0 {s24}
+V12 s25 0 {s25}
+V13 s26 0 {s26}
+
+* block symbol definitions
+.subckt com_tgate 1 C 2
+M1 N001 c $G_vss $G_vss N_130n l=0.2u w=0.2u ad=40f as=40f pd=0.8u ps=0.8u m=1
+M2 N001 c $G_vdd $G_vdd P_130n l=0.2u w=0.2u ad=40f as=40f pd=0.8u ps=0.8u m=3
+M3 2 N001 1 $G_vdd P_130n l=0.2u w=0.2u ad=40f as=40f pd=0.8u ps=0.8u m=3
+M4 2 c 1 $G_vss N_130n l=0.2u w=0.2u ad=40f as=40f pd=0.8u ps=0.8u m=1
+.ends com_tgate
+
+.subckt ao_cp_n IM IP Out Iref
+M1 N002 IP N006 $G_vss N_130n l={L} w=134u ad={Ldif*134u} as={Ldif*134u} pd={(Ldif+134u)*2} ps={(Ldif+134u)*2} m=1
+M8 N005 Iref N002 $G_vdd P_130n l={L} w=41u ad={Ldif*41u} as={Ldif*41u} pd={(Ldif+41u)*2} ps={(Ldif+41u)*2} m=1
+M2 N003 IM N006 $G_vss N_130n l={L} w=134u ad={Ldif*134u} as={Ldif*134u} pd={(Ldif+134u)*2} ps={(Ldif+134u)*2} m=1
+M3 N006 N007 $G_vss $G_vss N_130n l=3u w=19u ad={Ldif*19u} as={Ldif*19u} pd={(Ldif+19u)*2} ps={(Ldif+19u)*2} m=5
+M4 N008 N008 $G_vss $G_vss N_130n l={L} w=14u ad={Ldif*14u} as={Ldif*14u} pd={(Ldif+14u)*2} ps={(Ldif+14u)*2} m=1
+M5 N009 N008 $G_vss $G_vss N_130n l={L} w=14u ad={Ldif*14u} as={Ldif*14u} pd={(Ldif+14u)*2} ps={(Ldif+14u)*2} m=1
+M6 N005 N005 N008 $G_vss N_130n l={L} w=14u ad={Ldif*14u} as={Ldif*14u} pd={(Ldif+14u)*2} ps={(Ldif+14u)*2} m=1
+M7 Out N005 N009 $G_vss N_130n l={L} w=14u ad={Ldif*14u} as={Ldif*14u} pd={(Ldif+14u)*2} ps={(Ldif+14u)*2} m=1
+M9 Out Iref N003 $G_vdd P_130n l={L} w=41u ad={Ldif*41u} as={Ldif*41u} pd={(Ldif+41u)*2} ps={(Ldif+41u)*2} m=1
+M10 N002 N001 $G_vdd $G_vdd P_130n l={L} w=68u ad={Ldif*68u} as={Ldif*68u} pd={(Ldif+68u)*2} ps={(Ldif+68u)*2} m=1
+M11 N003 N001 $G_vdd $G_vdd P_130n l={L} w=68u ad={Ldif*68u} as={Ldif*68u} pd={(Ldif+68u)*2} ps={(Ldif+68u)*2} m=1
+M12 N004 N001 $G_vdd $G_vdd P_130n l=1u w=13u ad={Ldif*13u} as={Ldif*13u} pd={(Ldif+13u)*2} ps={(Ldif+13u)*2} m=1
+M13 N001 N001 $G_vdd $G_vdd P_130n l=1u w=13u ad={Ldif*13u} as={Ldif*13u} pd={(Ldif+13u)*2} ps={(Ldif+13u)*2} m=1
+M14 N007 Iref N004 $G_vdd P_130n l=1u w=10u ad={Ldif*10u} as={Ldif*10u} pd={(Ldif+10u)*2} ps={(Ldif+10u)*2} m=1
+M15 Iref Iref N001 $G_vdd P_130n l=1u w=10u ad={Ldif*10u} as={Ldif*10u} pd={(Ldif+10u)*2} ps={(Ldif+10u)*2} m=1
+M16 N007 N007 $G_vss $G_vss N_130n l=3u w=19u ad={Ldif*19u} as={Ldif*19u} pd={(Ldif+19u)*2} ps={(Ldif+19u)*2} m=1
+.param L=1u W=1u Ldif=0.2u
+.ends ao_cp_n
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\aniod\Documents\LTspiceXVII\lib\cmp\standard.mos
+.param R11=1Meg R12=5.012Meg R13=25.119Meg R1=1Meg
+.param R21=7.079Meg R22=8.913Meg R23=11.22Meg R24=14.125Meg R25=17.783Meg R26=22.387Meg  R2=10Meg
+.lib proiect_CAA.txt
+.ac dec 100 1m 100Meg
+.param s11=o
+.param s12=o
+.param s13=p
+.param s21=o
+.param s22=o
+.param s23=o
+.param s24=o
+.param s25=o
+.param s26=p
+.param p=1.65
+.param o=-1.65
+.backanno
+.end
